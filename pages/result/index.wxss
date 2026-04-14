@@ -1,0 +1,51 @@
+.input-card {
+  margin-bottom: 20rpx;
+}
+
+.input-text {
+  font-size: 28rpx;
+  color: #111827;
+  line-height: 1.7;
+}
+
+.meta-row {
+  margin-top: 14rpx;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rpx;
+}
+
+.meta-tag {
+  font-size: 22rpx;
+  color: #0f766e;
+  background: #ecfdf5;
+  border: 1rpx solid #b2e5dc;
+  border-radius: 8rpx;
+  padding: 4rpx 10rpx;
+}
+
+.meta-subtle {
+  font-size: 22rpx;
+  color: #6b7280;
+}
+
+.loading {
+  margin-bottom: 20rpx;
+  color: #4b5563;
+}
+
+.error-card {
+  border-color: #fecaca;
+}
+
+.error-text {
+  color: #b91c1c;
+}
+
+.retry-btn {
+  margin-top: 16rpx;
+}
+
+.regen-btn {
+  margin-top: 8rpx;
+}

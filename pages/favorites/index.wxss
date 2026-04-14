@@ -1,0 +1,50 @@
+.loading-card {
+  color: #4b5563;
+}
+
+.favorite-item {
+  margin-bottom: 16rpx;
+}
+
+.text {
+  font-size: 28rpx;
+  color: #111827;
+  line-height: 1.7;
+}
+
+.meta {
+  margin-top: 12rpx;
+  display: flex;
+  gap: 10rpx;
+  flex-wrap: wrap;
+}
+
+.style {
+  color: #0f766e;
+  background: #ecfdf5;
+  border: 1rpx solid #b2e5dc;
+  border-radius: 8rpx;
+  padding: 4rpx 10rpx;
+  font-size: 22rpx;
+}
+
+.category {
+  color: #6b7280;
+  font-size: 22rpx;
+}
+
+.time {
+  margin-top: 10rpx;
+  color: #9ca3af;
+  font-size: 22rpx;
+}
+
+.actions {
+  margin-top: 16rpx;
+  display: flex;
+  gap: 12rpx;
+}
+
+.small-btn {
+  margin: 0;
+}

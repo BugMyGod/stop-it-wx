@@ -1,0 +1,39 @@
+.template-card {
+  background: #ffffff;
+  border: 1rpx solid #dde3e8;
+  border-radius: 16rpx;
+  padding: 20rpx;
+}
+
+.title {
+  color: #111827;
+  font-size: 28rpx;
+  font-weight: 600;
+  margin-bottom: 8rpx;
+}
+
+.desc {
+  color: #4b5563;
+  font-size: 24rpx;
+  min-height: 64rpx;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin-top: 16rpx;
+  gap: 10rpx;
+}
+
+.tag {
+  background: #ecfdf5;
+  color: #1f766a;
+  font-size: 22rpx;
+  padding: 4rpx 10rpx;
+  border-radius: 8rpx;
+}
+
+.subtle {
+  color: #6b7280;
+  font-size: 22rpx;
+}

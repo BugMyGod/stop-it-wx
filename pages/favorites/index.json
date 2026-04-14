@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "收藏",
+  "usingComponents": {
+    "login-prompt": "/components/login-prompt/index",
+    "empty-state": "/components/empty-state/index"
+  }
+}

@@ -1,0 +1,31 @@
+<view class="container">
+  <view wx:if="{{!loggedIn}}">
+    <login-prompt
+      title="登录后可查看历史"
+      desc="历史记录会同步到账号，方便你随时复用。"
+      buttonText="去登录"
+      bind:login="handleLogin"
+    />
+  </view>
+
+  <view wx:elif="{{loading}}" class="card loading-card">历史加载中...</view>
+
+  <view wx:elif="{{!items.length}}">
+    <empty-state title="还没有历史记录" desc="在首页生成回应后，会自动记录到这里。" />
+  </view>
+
+  <view wx:else>
+    <view class="card history-item" wx:for="{{items}}" wx:key="id">
+      <view class="summary">{{item.inputSummary}}</view>
+      <view class="meta-row">
+        <text class="tone">{{item.tone}}</text>
+        <text class="category">{{item.categoryText}}</text>
+      </view>
+      <view class="time">{{item.displayTime}}</view>
+      <view class="actions">
+        <button class="ghost-btn small-btn" size="mini" data-id="{{item.id}}" bindtap="handleViewDetail">查看详情</button>
+        <button class="danger-btn small-btn" size="mini" data-id="{{item.id}}" bindtap="handleDelete">删除</button>
+      </view>
+    </view>
+  </view>
+</view>

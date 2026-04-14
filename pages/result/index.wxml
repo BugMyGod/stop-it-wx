@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="card input-card">
+    <view class="section-title">你的原始场景</view>
+    <view class="input-text">{{inputText}}</view>
+    <view class="meta-row">
+      <text class="meta-tag">语气：{{tone}}</text>
+      <text class="meta-subtle" wx:if="{{categoryText}}">
+        {{categoryText}}
+      </text>
+    </view>
+  </view>
+
+  <view class="loading card" wx:if="{{loading}}">
+    <view>生成中，请稍候...</view>
+  </view>
+
+  <view class="card error-card" wx:if="{{!loading && errorMessage}}">
+    <view class="error-text">{{errorMessage}}</view>
+    <button class="ghost-btn retry-btn" bindtap="handleRegenerate">重新生成</button>
+  </view>
+
+  <view wx:if="{{!loading && !errorMessage}}">
+    <reply-card
+      wx:for="{{replies}}"
+      wx:key="id"
+      reply="{{item}}"
+      index="{{index}}"
+      favoriteLoading="{{item.favoriteLoading}}"
+      bind:copy="handleCopy"
+      bind:favorite="handleFavorite"
+      bind:refine="handleRefine"
+      bind:regenerate="handleRegenerate"
+    />
+  </view>
+
+  <empty-state wx:if="{{!loading && !errorMessage && !replies.length}}" title="暂无结果" desc="请返回首页重新输入场景。" />
+
+  <button class="primary-btn regen-btn" wx:if="{{!loading && replies.length > 0}}" bindtap="handleRegenerate">
+    重新生成 3 条
+  </button>
+</view>

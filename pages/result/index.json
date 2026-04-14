@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "生成结果",
+  "usingComponents": {
+    "reply-card": "/components/reply-card/index",
+    "empty-state": "/components/empty-state/index"
+  }
+}

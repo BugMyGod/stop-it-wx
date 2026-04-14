@@ -1,0 +1,49 @@
+.profile-card {
+  margin-bottom: 20rpx;
+}
+
+.title {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.user-line {
+  margin-top: 16rpx;
+}
+
+.label {
+  color: #6b7280;
+  font-size: 24rpx;
+}
+
+.value {
+  color: #111827;
+  font-size: 24rpx;
+}
+
+.menu-card {
+  padding: 0 24rpx;
+}
+
+.menu-item {
+  height: 96rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #eef2f7;
+  font-size: 28rpx;
+  color: #1f2937;
+}
+
+.menu-item:last-child {
+  border-bottom: 0;
+}
+
+.arrow {
+  color: #9ca3af;
+}
+
+.auth-btn {
+  margin-top: 24rpx;
+}

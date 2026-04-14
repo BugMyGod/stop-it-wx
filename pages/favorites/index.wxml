@@ -1,0 +1,40 @@
+<view class="container">
+  <view wx:if="{{!loggedIn}}">
+    <login-prompt
+      title="登录后可查看收藏"
+      desc="收藏内容会与账号同步，换设备也不会丢。"
+      buttonText="去登录"
+      bind:login="handleLogin"
+    />
+  </view>
+
+  <view wx:elif="{{loading}}" class="card loading-card">收藏加载中...</view>
+
+  <view wx:elif="{{!items.length}}">
+    <empty-state title="你还没有收藏内容" desc="在结果页点击收藏，常用话术会保存在这里。" />
+  </view>
+
+  <view wx:else>
+    <view class="card favorite-item" wx:for="{{items}}" wx:key="id">
+      <view class="text">{{item.replyText}}</view>
+      <view class="meta">
+        <text class="style">{{item.style}}</text>
+        <text class="category">{{item.displayCategory}}</text>
+      </view>
+      <view class="time">{{item.displayTime}}</view>
+      <view class="actions">
+        <button class="ghost-btn small-btn" size="mini" data-text="{{item.replyText}}" bindtap="handleCopy">
+          复制
+        </button>
+        <button
+          class="danger-btn small-btn"
+          size="mini"
+          data-replyid="{{item.replyId}}"
+          bindtap="handleUnfavorite"
+        >
+          取消收藏
+        </button>
+      </view>
+    </view>
+  </view>
+</view>

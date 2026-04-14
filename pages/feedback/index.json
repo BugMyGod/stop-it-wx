@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "反馈",
+  "usingComponents": {
+    "login-prompt": "/components/login-prompt/index"
+  }
+}

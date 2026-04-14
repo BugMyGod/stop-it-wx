@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="card">
+    <view class="title">账号登录</view>
+    <view class="tip">
+      当前先提供 Supabase 邮箱密码登录；后续可在 auth service 中扩展微信授权登录而不影响业务层。
+    </view>
+
+    <view class="form-item">
+      <view class="label">邮箱</view>
+      <input
+        class="input"
+        type="text"
+        value="{{email}}"
+        placeholder="请输入已注册邮箱"
+        bindinput="handleEmailInput"
+      />
+    </view>
+
+    <view class="form-item">
+      <view class="label">密码</view>
+      <input
+        class="input"
+        type="password"
+        value="{{password}}"
+        placeholder="请输入密码"
+        bindinput="handlePasswordInput"
+      />
+    </view>
+
+    <button class="primary-btn auth-btn" loading="{{loading}}" bindtap="handleLogin">登录</button>
+    <button class="ghost-btn auth-btn" bindtap="handleBackHome">先去体验生成</button>
+  </view>
+</view>

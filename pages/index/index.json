@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "StopIt",
+  "usingComponents": {
+    "template-card": "/components/template-card/index",
+    "tone-selector": "/components/tone-selector/index"
+  }
+}

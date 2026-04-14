@@ -1,0 +1,4 @@
+<view class="empty-wrap card">
+  <view class="title">{{title}}</view>
+  <view class="desc" wx:if="{{desc}}">{{desc}}</view>
+</view>

@@ -1,0 +1,8 @@
+<view class="template-card" bindtap="handleTap">
+  <view class="title">{{template.title}}</view>
+  <view class="desc">{{template.short_desc}}</view>
+  <view class="footer">
+    <text class="tag">{{template.category_level_1}}</text>
+    <text class="subtle">{{template.category_level_2}}</text>
+  </view>
+</view>

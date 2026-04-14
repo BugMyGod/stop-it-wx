@@ -1,0 +1,17 @@
+.empty-wrap {
+  margin-top: 24rpx;
+  text-align: center;
+  padding: 40rpx 24rpx;
+}
+
+.title {
+  font-size: 28rpx;
+  color: #111827;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 10rpx;
+  color: #6b7280;
+  font-size: 24rpx;
+}

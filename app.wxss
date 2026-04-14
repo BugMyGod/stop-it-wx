@@ -1,0 +1,54 @@
+page {
+  background: #f4f6f8;
+  color: #1f2937;
+  font-size: 28rpx;
+  line-height: 1.5;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 28rpx;
+  box-sizing: border-box;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20rpx;
+  border: 1rpx solid #e5e7eb;
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  margin-bottom: 18rpx;
+}
+
+.subtle {
+  color: #6b7280;
+}
+
+.primary-btn {
+  background: #2fa394;
+  color: #ffffff;
+  border-radius: 14rpx;
+  font-size: 30rpx;
+  border: 0;
+}
+
+.ghost-btn {
+  background: #ecfdf5;
+  color: #1f766a;
+  border: 1rpx solid #b2e5dc;
+  border-radius: 14rpx;
+  font-size: 28rpx;
+}
+
+.danger-btn {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1rpx solid #fecaca;
+  border-radius: 14rpx;
+  font-size: 28rpx;
+}

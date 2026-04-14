@@ -1,0 +1,11 @@
+<view class="tone-wrap">
+  <block wx:for="{{options}}" wx:key="*this">
+    <view
+      class="tone-item {{item === value ? 'tone-item--active' : ''}}"
+      data-tone="{{item}}"
+      bindtap="handleSelect"
+    >
+      {{item}}
+    </view>
+  </block>
+</view>

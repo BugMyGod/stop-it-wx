@@ -1,0 +1,22 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "stop-it-wx",
+  "description": "StopIt 微信小程序 MVP",
+  "appid": "touristappid",
+  "compileType": "miniprogram",
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": false,
+    "urlCheck": false,
+    "coverView": true,
+    "showShadowRootInWxmlPanel": true,
+    "lazyloadPlaceholderEnable": false,
+    "packNpmManually": false,
+    "ignoreUploadUnusedFiles": true,
+    "typescript": true
+  },
+  "simulatorType": "wechat",
+  "condition": {}
+}

@@ -1,0 +1,33 @@
+<view class="container">
+  <view wx:if="{{!loggedIn}}">
+    <login-prompt
+      title="登录后可提交反馈"
+      desc="你的建议会帮助我们优化回应质量。"
+      buttonText="去登录"
+      bind:login="handleLogin"
+    />
+  </view>
+
+  <view class="card" wx:else>
+    <view class="section-title">意见反馈</view>
+    <textarea
+      class="feedback-input"
+      maxlength="{{500}}"
+      auto-height
+      value="{{content}}"
+      placeholder="告诉我们你希望优化什么场景、语气或功能。"
+      bindinput="handleContentInput"
+    />
+
+    <view class="label">联系方式（可选）</view>
+    <input
+      class="contact-input"
+      type="text"
+      value="{{contact}}"
+      placeholder="微信 / 邮箱 / 手机"
+      bindinput="handleContactInput"
+    />
+
+    <button class="primary-btn submit-btn" loading="{{loading}}" bindtap="handleSubmit">提交反馈</button>
+  </view>
+</view>

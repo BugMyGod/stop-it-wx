@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="brand card">
+    <view class="brand-title">StopIt回应助手</view>
+    <view class="brand-slogan">{{slogan}}</view>
+    <view class="brand-desc">{{description}}</view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">场景模板</view>
+    <view class="subtle">点击即可自动填充输入框</view>
+    <view wx:if="{{templateLoading}}" class="loading subtle">模板加载中...</view>
+    <view class="template-grid" wx:else>
+      <block wx:for="{{templates}}" wx:key="id">
+        <template-card template="{{item}}" bind:select="handleTemplateSelect" />
+      </block>
+    </view>
+  </view>
+
+  <view class="section card">
+    <view class="section-title">自由输入场景</view>
+    <textarea
+      class="input-area"
+      value="{{inputText}}"
+      placeholder="同事总把本来不属于我的活交给我，我不想再默认接了"
+      maxlength="300"
+      bindinput="handleInput"
+      auto-height
+    />
+  </view>
+
+  <view class="section card">
+    <view class="section-title">语气风格</view>
+    <tone-selector options="{{toneOptions}}" value="{{selectedTone}}" bind:change="handleToneChange" />
+  </view>
+
+  <button class="primary-btn generate-btn" bindtap="handleGenerate">帮我生成回应</button>
+</view>

@@ -1,0 +1,36 @@
+.title {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #111827;
+}
+
+.tip {
+  margin-top: 12rpx;
+  font-size: 24rpx;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.form-item {
+  margin-top: 20rpx;
+}
+
+.label {
+  color: #374151;
+  margin-bottom: 8rpx;
+  font-size: 24rpx;
+}
+
+.input {
+  width: 100%;
+  height: 84rpx;
+  border: 1rpx solid #e5e7eb;
+  border-radius: 12rpx;
+  padding: 0 18rpx;
+  box-sizing: border-box;
+  background: #f9fafb;
+}
+
+.auth-btn {
+  margin-top: 18rpx;
+}

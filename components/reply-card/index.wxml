@@ -1,0 +1,15 @@
+<view class="reply-card">
+  <view class="header">
+    <text class="style">{{reply.style}}</text>
+  </view>
+  <view class="text">{{reply.text}}</view>
+  <view class="note">{{reply.note}}</view>
+  <view class="actions">
+    <button class="mini-btn" size="mini" bindtap="handleCopy">复制</button>
+    <button class="mini-btn" size="mini" loading="{{favoriteLoading}}" bindtap="handleFavorite">
+      {{reply.isFavorite ? '取消收藏' : '收藏'}}
+    </button>
+    <button class="mini-btn" size="mini" bindtap="handleRefine">微调</button>
+    <button class="mini-btn" size="mini" bindtap="handleRegenerate">重新生成</button>
+  </view>
+</view>

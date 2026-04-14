@@ -1,0 +1,19 @@
+.login-prompt {
+  margin-top: 24rpx;
+}
+
+.title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #111827;
+}
+
+.desc {
+  margin-top: 10rpx;
+  color: #6b7280;
+  font-size: 24rpx;
+}
+
+.login-btn {
+  margin-top: 24rpx;
+}
